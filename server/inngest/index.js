@@ -60,7 +60,7 @@ const autoCheckOut = inngest.createFunction(
 );
 
 // Leave application reminder
-// Send Email to admin, If admin doesn't take actio on leave application within 24 hours
+// Send Email to admin, If admin doesn't take action on leave application within 24 hours
 const leaveApplicationReminder = inngest.createFunction(
   { id: "leave-application-reminder",triggers:[ {event:"leave/pending"}]},
   async ({ event, step }) => {

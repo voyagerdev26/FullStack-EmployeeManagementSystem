@@ -13,6 +13,7 @@ export const login = async (req,res)=>{
     }
 
     const user = await User.findOne({email});
+    console.log(user);
     if(!user){
       return res.status(401).json({error:"Invalid credentials"});
     }
@@ -37,7 +38,7 @@ export const login = async (req,res)=>{
     // creating token for authentication using jwt
     const token= jwt.sign(payload,process.env.JWT_SECRET, {expiresIn:"7d"});
 
-    return res.json({user:payload,token});
+    return res.status(200).json({user:payload,token});
   }
   catch(error){
     console.error("Login error:",error);

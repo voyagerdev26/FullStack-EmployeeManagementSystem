@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from 'react'
 import { useLocation,Link } from 'react-router-dom'
-import {dummyProfileData} from "../assets/assets"
+// import {dummyProfileData} from "../assets/assets"
 import { Calendar1Icon, LogOutIcon, ChevronRightIcon, DollarSignIcon, FileTextIcon, LayoutGridIcon, MenuIcon, SettingsIcon, UserIcon, XIcon, Loader2} from "lucide-react"
 
 import {useAuth} from "../context/AuthContext"

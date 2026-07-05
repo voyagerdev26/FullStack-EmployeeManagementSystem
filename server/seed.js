@@ -5,6 +5,9 @@ import connectDB from "./config/db.js"
 import User from "./models/User.js";
 import bcrypt from "bcrypt";
 
+import dns from 'node:dns';
+dns.setServers(['1.1.1.1', '1.0.0.1']);
+
 const TemporaryPassword = "admin123";
 
 async function registerAdmin(){

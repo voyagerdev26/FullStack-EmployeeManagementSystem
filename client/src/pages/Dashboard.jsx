@@ -1,9 +1,10 @@
 import React,{useState,useEffect} from "react";
-import { dummyAdminDashboardData, dummyEmployeeDashboardData } from "../assets/assets";
+// import { dummyAdminDashboardData, dummyEmployeeDashboardData } from "../assets/assets";
 import Loading from "../components/Loading";
 import EmployeeDashboard from "../components/EmployeeDashboard";
 import AdminDashboard from "../components/AdminDashboard";
 import toast from "react-hot-toast"
+import api from "../api/axios";
 
 const Dashboard=()=>{
 
